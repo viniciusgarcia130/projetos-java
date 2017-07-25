@@ -1,0 +1,31 @@
+create table cliente(
+    idCliente bigint auto_increment,
+    nome varchar(50) not null,
+    rg varchar(10) not null,
+    cpf varchar(11) not null,
+    email varchar(50) null,
+    telefone int not null,
+    endereco varchar(100),
+    primary key (idCliente));
+
+create table movel(
+idMovel bigint auto_increment,
+nome varchar(50) not null,
+preco double not null,
+tipo varchar(20) not null,
+quantidade int not null,
+altura double not null,
+largura double not null,
+comprimento double not null,
+primary key(idMovel)
+);
+create table Funcionario(
+idFuncionario bigint auto_increment,
+nome varchar(50) not null,
+cpf varchar(11) not null,
+rg varchar(10) not null,
+setor varchar(20) not null,
+telefone int not null,
+endereco varchar(100) not null,
+primary key(idFuncionario)
+)
